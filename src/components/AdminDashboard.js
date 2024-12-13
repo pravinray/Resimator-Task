@@ -19,14 +19,10 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import SideNav from "./SideNav";
 import adminData from "../assets/data/adminData.json";
 import users from "../assets/data/users.json";
-import localStorageUtil from "../utils/LocalStorageUtil";
-import { useNavigate } from "react-router-dom";
 import Logout from "../shared/Logout";
 
 const AdminDashboard = () => {
-  const navigate = useNavigate();
 
-  // State for menu
   const [anchorEl, setAnchorEl] = useState(null);
   const [currentRow, setCurrentRow] = useState(null);
 
@@ -38,12 +34,6 @@ const AdminDashboard = () => {
   const handleMenuClose = () => {
     setAnchorEl(null);
     setCurrentRow(null);
-  };
-
-  const logout = () => {
-    localStorageUtil.clearLocalStorage("email");
-    localStorageUtil.clearLocalStorage("password");
-    navigate("/");
   };
 
   return (
