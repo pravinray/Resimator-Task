@@ -21,7 +21,7 @@ import adminData from "../assets/data/adminData.json";
 import users from "../assets/data/users.json";
 import localStorageUtil from "../utils/LocalStorageUtil";
 import { useNavigate } from "react-router-dom";
-import Logout from "./Logout";
+import Logout from "../shared/Logout";
 
 const AdminDashboard = () => {
   const navigate = useNavigate();
@@ -55,12 +55,6 @@ const AdminDashboard = () => {
       <div className="p-6 bg-gray-100 min-h-screen flex-1">
         <div>
             <Logout />
-          {/* <button
-            className="px-4 py-2 bg-red-500 text-white rounded float-right"
-            onClick={logout}
-          >
-            Log Out
-          </button> */}
         </div>
         <Typography variant="h4" component="h1" gutterBottom>
           Admin Dashboard
@@ -133,7 +127,6 @@ const AdminDashboard = () => {
                     <b>Published on</b>
                   </TableCell>
                   <TableCell></TableCell>
-                  {/* Extra column for menu */}
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -153,7 +146,6 @@ const AdminDashboard = () => {
                             ? "default"
                             : "warning"
                         }
-                        // variant="outlined"
                       />
                     </TableCell>
                     <TableCell>{user.date}</TableCell>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import translations from "../constants/translations";
 import users from "../assets/data/userCredentials.json";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import localStorageUtil from "../utils/LocalStorageUtil";
 
 export const Login = () => {
@@ -37,26 +37,14 @@ export const Login = () => {
     <div className="flex h-screen">
       {/* Left Section */}
       <div className="hidden md:flex w-[30%] bg-[#18476c] text-white flex-col justify-center items-center p-8 relative">
-        <div
-          // className="absolute top-8 left-8"
-          // className="top-40 left-12 absolute"
-          className=""
-        >
-          <div
-            className="rounded-full flex items-center justify-center
-            top-28 left-12 absolute
-           "
-          >
+        <div>
+          <div className="rounded-full flex items-center justify-center top-28 left-12 absolute">
             <img
               alt="name"
-              // src="../assets/images/resimator-logo.jpeg"
               src="https://img.jobsnepal.com/big/BFJkgpx1vYB33hHCh7mRnduivlFiY1DzNDl67VKt.png"
-              className=" w-48 rounded-full"
+              className="w-48 rounded-full"
             />
-
-            {/* <span className="text-blue-900 text-4xl font-bold">R</span> */}
           </div>
-          {/* </div> */}
           <div className="text-start">
             <h1 className="text-l  mb-4 ">{t.heading}</h1>
             <p className="text-4xl font-bold">{t.subheading}</p>
@@ -161,5 +149,3 @@ export const Login = () => {
     </div>
   );
 };
-
-// export default Login;
