@@ -1,0 +1,43 @@
+const translations = {
+    en: {
+      app: "Resimator",
+      heading: "Effortlessly Manage Your Property",
+      subheading: "Add, Buy, or Rent with Ease!",
+      signin: "Sign in to ",
+      instruction: "Please sign in to Resimator using your email & password received in your email.",
+      email: "Email",
+      emailPlaceholder: "Enter email address",
+      password: "Password",
+      rememberMe: "Remember me",
+      forgotPassword: "Forgot password",
+      signInButton: "Sign in",
+    },
+    sv: {
+      app: "Resimator",
+      heading: "Hantera din fastighet enkelt",
+      subheading: "Lägg till, köp eller hyr enkelt!",
+      signin: "Logga in på ",
+      instruction: "Logga in på Resimator med din e-post och lösenord som du fick i din e-post.",
+      email: "E-post",
+      emailPlaceholder: "Ange e-postadress",
+      password: "Lösenord",
+      rememberMe: "Kom ihåg mig",
+      forgotPassword: "Glömt lösenord",
+      signInButton: "Logga in",
+    },
+    fi: {
+      app: "Resimatoriin",
+      heading: "Hallitse kiinteistösi vaivattomasti",
+      subheading: "Lisää, osta tai vuokraa helposti!",
+      signin: "Kirjaudu ",
+      instruction: "Kirjaudu Resimatoriin sähköpostillasi ja salasanallasi, jotka sait sähköpostiisi.",
+      email: "Sähköposti",
+      emailPlaceholder: "Anna sähköpostiosoite",
+      password: "Salasana",
+      rememberMe: "Muista minut",
+      forgotPassword: "Unohtuiko salasana",
+      signInButton: "Kirjaudu",
+    },
+  };
+
+  export default translations;

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Markus Virtanen",
+    "email": "finamarkus.virtanen@example.com",
+    "phone": "+123 45 6789012",
+    "role": "Owner",
+    "status": "Active",
+    "date": "15.01.2023"
+  },
+  {
+    "name": "Anna Korhonen",
+    "email": "anna.korhonen@example.com",
+    "phone": "+123 45 6789012",
+    "role": "Property Manager",
+    "status": "Inactive",
+    "date": "30.09.2022"
+  },
+  {
+    "name": "Jukka Nieminen",
+    "email": "jukka.nieminen@example.com",
+    "phone": "+123 45 6789012",
+    "role": "Partner Supervisor",
+    "status": "Active",
+    "date": "20.11.2021"
+  },
+  {
+    "name": "Laura Rantanen",
+    "email": "laura.rantanen@example.com",
+    "phone": "+123 45 6789012",
+    "role": "Board Member",
+    "status": "Pending",
+    "date": "10.06.2022"
+  }
+]
