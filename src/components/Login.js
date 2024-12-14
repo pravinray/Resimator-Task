@@ -3,6 +3,7 @@ import translations from "../constants/translations";
 import users from "../assets/data/userCredentials.json";
 import { useNavigate } from "react-router-dom";
 import localStorageUtil from "../utils/LocalStorageUtil";
+import hashPassword from "../utils/Encrypt";
 
 export const Login = () => {
   const [language, setLanguage] = useState("en");
@@ -18,13 +19,14 @@ export const Login = () => {
 
   const navigate = useNavigate();
 
-  const login = () => {
+  const login = async () => {
     if (
       users.find((user) => user.email === email && user.password === password)
     ) {
       alert("Succefully logged in.");
+      const securedPassword = await hashPassword(password);
       localStorageUtil.setLocalStorage("email", email);
-      localStorageUtil.setLocalStorage("password", password);
+      localStorageUtil.setLocalStorage("password", securedPassword);
       email.toString().includes("admin")
         ? navigate("/admin")
         : navigate("/user");
