@@ -12,6 +12,25 @@ This project is an admin dashboard application. The application includes dynamic
 - Interactive charts using Recharts.
 - Mocked data for seamless testing.
 
+## Routes
+
+#### Login Page
+```bash
+Local - localhost:3000
+Live - https://pravin-resimator-test.netlify.app
+```
+#### Admin Dashboard Page
+```bash
+Local - localhost:3000/admin
+Live - https://pravin-resimator-test.netlify.app/admin
+```
+#### User Dashboard Page
+```bash
+Local - localhost:3000/user
+Live - https://pravin-resimator-test.netlify.app/user
+```
+
+
 ## Prerequisites
 Ensure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/)
