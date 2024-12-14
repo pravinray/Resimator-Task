@@ -1,12 +1,9 @@
 import React from "react";
 import { Navigate, useLocation } from "react-router-dom";
 import localStorageUtil from "./LocalStorageUtil";
-// import { ProtectedRoutesProps } from '../types/RouteTypes';
 
 const ProtectedRoutes = ({
   element: Element,
-  //   isProfileSetup,
-  //   isSetupProfilePage = false,
 }) => {
   const location = useLocation();
 
@@ -17,10 +14,6 @@ const ProtectedRoutes = ({
   ) {
     return <Navigate to="/" />;
   }
-
-  //   if (localStorageUtil.existInLocalStorage('Token') && !isProfileSetup && !isSetupProfilePage) {
-  //     return <Navigate to="/setup-coach-profile" state={{ from: location }} />;
-  //   }
 
   return <Element />;
 };

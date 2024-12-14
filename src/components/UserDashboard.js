@@ -1,7 +1,7 @@
 import React from "react";
 import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 import userData from "../assets/data/userData.json";
-import SideNav from "./SideNav";
+import SideNav from "../shared/SideNav";
 import Logout from "../shared/Logout";
 
 const UserDashboard = () => {

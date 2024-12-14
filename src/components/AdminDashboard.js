@@ -16,7 +16,7 @@ import {
   Card,
 } from "@mui/material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import SideNav from "./SideNav";
+import SideNav from "../shared/SideNav";
 import adminData from "../assets/data/adminData.json";
 import users from "../assets/data/users.json";
 import Logout from "../shared/Logout";
@@ -41,7 +41,6 @@ const AdminDashboard = () => {
       {/* Sidenav */}
       <SideNav />
 
-      {/* Main Content */}
       <div className="p-6 bg-gray-100 min-h-screen flex-1">
         <div>
             <Logout />
@@ -50,7 +49,6 @@ const AdminDashboard = () => {
           Admin Dashboard
         </Typography>
 
-        {/* Metrics Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <Paper elevation={3} className="p-4">
             <Typography variant="h6" component="h2" gutterBottom>
