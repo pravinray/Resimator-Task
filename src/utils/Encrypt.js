@@ -1,15 +1,12 @@
-const bcrypt = require('bcryptjs');
+import CryptoJS from "crypto-js";
 
-
-const hashPassword = async (password) => {
-  try {
-    const saltRounds = await bcrypt.genSalt(10)
-    const hashedPassword = await bcrypt.hash(password, saltRounds);
-    console.log('Hashed Password:', hashedPassword);
-    return hashedPassword;
-  } catch (err) {
-    console.error('Error in hashing password:', err);
-  }
+const encryptPassword = (password, secretKey = "pravin") => {
+  const encryptedPassword = CryptoJS.AES.encrypt(
+    password,
+    secretKey
+  ).toString();
+  console.log("Encrypted Password:", encryptedPassword);
+  return encryptedPassword;
 };
 
-export default hashPassword;
+export default encryptPassword;
